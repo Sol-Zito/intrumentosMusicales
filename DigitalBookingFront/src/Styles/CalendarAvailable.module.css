@@ -1,0 +1,103 @@
+.divContenedorPrincipal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contenedorDeCalendario {
+    text-align: start;
+}
+
+.contenedorDeReserva {
+    background: #FFFFFF;
+    border: 1px solid #DFE4EA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    height: max-content;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.title {
+    font-family: Roboto;
+    line-height: 28.13px;
+    color: #383B58;
+}
+
+.subTitle {
+    line-height: 19px;
+    padding: 5px;
+    color: #383B58;
+    font-family: Roboto;
+    font-weight: 700;
+}
+
+.mobile {
+    display: none;
+}
+
+/*--------------------------Portatil----------------------*/
+@media (max-width:1200px) {
+    .divContenedorPrincipal {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        gap: 14px;
+    }
+
+    .contenedorDeReserva {
+        width: 59%;
+    }
+}
+
+/*--------------------------Tablet----------------------*/
+@media (max-width:900px) {
+    .divContenedorPrincipal {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        gap: 14px;
+    }
+
+    .contenedorDeReserva {
+        width: 78%;
+    }
+    
+
+
+}
+
+/*--------------------------mobile----------------------*/
+@media (max-width:600px) {
+    .desk {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .contenedorDeReserva {
+        width: 71%;
+    }
+
+    .contenedorDeReserva>button {
+        width: 100%;
+    }
+  
+}

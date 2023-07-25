@@ -1,0 +1,14 @@
+.containerVerifyUser {
+    height: 100vh;
+    width: auto;
+    background-color: rgba(196, 196, 196, 0.151);
+}
+
+.messageVerification{
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10%
+}

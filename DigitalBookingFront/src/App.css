@@ -1,0 +1,103 @@
+ .app {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   max-height: 100%;
+   min-height: 100vh;
+   
+ }
+
+ .disabled {
+   visibility: hidden
+ }
+
+ body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #EBECEF;
+   max-height: 100%;
+   min-height: 100vh;
+   margin: 0;
+   text-align: left;
+ }
+
+ .button {
+   background-color: #FFFFFF;
+   border-radius: 8px;
+   border: 1px solid #F0572D;
+   padding: 10px 10px;
+   margin: 4px;
+   font-size: 1em;
+   font-weight: 500;
+   font-family: inherit;
+   color: #F0572D;
+   cursor: pointer;
+   transition: border-color 0.25s;
+   text-align: center;
+
+ }
+
+ .button:hover {
+   background-color: #F0572D;
+   color: #FFFFFF;
+ }
+
+ .button:focus,
+ .button:focus-visible {
+   outline: 4px auto -webkit-focus-ring-color;
+ }
+
+ .rmdp-input {
+   border: 2px inset !important;
+   border-radius: 5px;
+   height: 22px;
+   margin: 1px 0;
+   padding: 6px !important;
+ }
+
+ .calendarmobile {
+   display: none;
+ }
+
+
+
+ /*-----------------NOTEBOOK----------------------*/
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+
+}
+ /*-----------------TABLET----------------------*/
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+
+  
+}
+
+/*---------------MOBILE--------------------*/
+@media only screen and (min-width: 0px) and (max-width:600px) {
+
+ 
+
+   .calendarDesk {
+     display: none;
+   }
+
+   .calendarmobile {
+     display: inline-block;
+     width: 76%;
+   }
+
+   .rmdp-container {
+     display: inline-block;
+     height: max-content;
+     width: 100%;
+   }
+
+   .rmdp-input {
+     border-radius: 5px;
+     height: 22px;
+     margin: 1px 0;
+     padding: 6px;
+     width: 100%;
+   }
+
+ }

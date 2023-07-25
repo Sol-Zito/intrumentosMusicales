@@ -1,0 +1,204 @@
+.containerButton{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  width: 90vw;
+  text-align: right;
+}
+
+.buttonAdminPanel{
+  background-color: transparent;
+  color: rgba(56, 59, 88, 1);
+  font-weight: 400;
+  font-family: 'Roboto';
+  border: none;
+  position: absolute;
+  top: 65px;
+  right: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 2px 1px rgba(0, 0, 0, 0.2); 
+
+}
+
+.buttonAdminPanel:hover{
+  color:white;
+  background: rgba(56, 59, 88, 1);
+  cursor: pointer;
+}
+
+
+.buttonSubmit {
+  width: 100%;
+  background-color: #F0572D;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 10px 10px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Roboto';
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  text-align: center;
+}
+
+
+.buttonSubmit:focus,
+.buttonSubmit:hover {
+  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btnDisabled {
+  background-color: #BEBEBE;
+  color: #FFFFFF;
+  border-radius: 8px;
+  border: 1px solid;
+  padding: 5px 5px;
+  width: 160px;
+  margin: 4px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  transition: border-color 0.25s;
+  text-align: center;
+}
+
+.btnAlert {
+
+  background-color: #FFFFFF;
+  border-radius: 0.5rem;
+  border: 0.15rem solid #F0572D;
+  justify-content: center;
+  padding: 5px 2px;
+  margin: 4px 2px;
+  font-size: 1rem;
+  font-family: 'Roboto';
+  color: #F0572D;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  width: max-content;
+  font-weight: 700;
+}
+
+.customFileUpload {
+  cursor: pointer;
+  border: 1px solid rgb(136, 136, 136);
+  background-color: #EEEAE9;
+  border-radius: 8px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+}
+
+/* Cambiar el estilo cuando se pasa el cursor sobre el botón */
+.customFileUpload:hover {
+  background-color: #ccc;
+}
+
+/* Cambiar el estilo cuando se hace clic en el botón */
+.customFileUpload:active {
+  background-color: #aaa;
+}
+
+.buttonSubirImagen {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  border: 1px solid #F0572D;
+  padding: 5px 5px;
+  width: 160px;
+  margin: 4px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: #F0572D;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  text-align: center;
+}
+
+.buttonSubirImagen:hover {
+  background-color: #F0572D;
+  color: #FFFFFF;
+}
+
+.buttonSinfondo {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 16px;
+  color: #FFFFFF;
+
+}
+
+.buttonSinfondo>span{
+padding-left: 2px;
+ 
+}
+
+.buttonSinfondo>i{
+  padding-left: 2px;
+  font-size: 20px;
+}  
+
+.buttonSinFondoNegro{
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 12px;
+  color:rgba(56, 59, 88, 1);
+  width: 100%;
+  padding: 20px;
+}
+
+.buttonDisabled{
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+  color: grey;
+
+}
+.backButton {
+  background-color: #FFFFFF;
+  border: 1px solid #F0572D;
+  border-radius: 5px;
+  width: 25px;
+  font-size: 25px;
+  padding: 1px;
+  color: #F0572D;
+  
+}
+
+.backButton:hover {
+  background-color: #F0572D;
+  color: #FFFFFF;
+}
+
+@media only screen and (min-width: 0px) and (max-width:600px) {
+  .buttonSubmit {
+    width: 100px;
+    font-size: 12px;
+  }
+  
+.buttonAdminPanel{
+  background-color: white;
+  width: 90vw;
+}}
+
+@media only screen and (min-width: 600px) and (max-width: 990px) {
+  .buttonAdminPanel{
+    background-color: white;
+    width: 15vw;
+    top: 10px;
+  }}
+
+@media only screen and (min-width: 990px) and (max-width: 1200px) {
+  .buttonAdminPanel{
+    background-color: white;
+    width: 10vw;
+    top: 10px;
+    }}

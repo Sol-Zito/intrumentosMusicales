@@ -1,0 +1,166 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: space-between;
+  width: 600px;
+  height: 100%;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 16px;
+  box-shadow: 0px 4px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  border: 0.5px solid #F0572D;
+}
+
+.cardGrid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  align-content: space-between;
+  align-self: center;
+  width: 50%;
+  height: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: left;
+}
+
+.cardImage {
+  display: flex;
+  justify-content: stretch;
+  align-content: stretch;
+  width: 50%;
+
+}
+
+.imgInstrument {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+
+}
+
+
+a {
+  color: #000;
+  text-decoration: none;
+  margin: 5px;
+  cursor: pointer;
+}
+
+a:hover {
+  color: rgb(136, 136, 136);
+}
+
+
+.button {
+  background-color: #F0572D;
+  border-radius: 8px;
+  border: 1px solid #F0572D;
+  padding: 8px;
+  font-size: 1.2em;
+  font-family: 'Roboto';
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+
+
+
+}
+
+.button:focus,
+.button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+
+/*--------------------------mobile----------------------*/
+
+
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 80vw;
+    flex-wrap: nowrap;
+
+  }
+
+  .cardImage {
+    display: flex;
+    justify-content: stretch;
+    align-content: stretch;
+    width: 100%;
+
+  }
+
+  .imgInstrument {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+
+  }
+}
+
+
+/*--------------------------Tablet----------------------*/
+
+@media only screen and (min-width: 600px) and (max-width: 990px) {
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-align: center;
+    width: 40vw;
+    height: 100%;
+  }
+
+
+  .cardImage {
+    display: flex;
+    justify-content: stretch;
+    align-content: stretch;
+    width: 100%;
+
+
+  }
+
+  .imgInstrument {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+
+  }
+}
+
+@media only screen and (min-width: 990px) and (max-width: 1200px) {
+  .card {
+    width: 40vw;
+    height: 100%;
+  }
+
+
+}

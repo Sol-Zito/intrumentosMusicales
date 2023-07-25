@@ -1,0 +1,267 @@
+.containerSelectForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+
+.button {
+  background-color: #F0572D;
+  border-radius: 8px;
+  border: 1px solid #F0572D;
+  padding: 8px;
+  font-size: 1.2em;
+  font-family: 'Roboto';
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  text-align: center;
+  width: 200px;
+  align-self: center;
+
+
+}
+
+.button:focus,
+.button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/*---------------------------*/
+.containerForm {
+  width: 100%;
+}
+
+.containerSearch {
+  display: flex;
+  gap: 36px;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+}
+
+.contenedorInputCiudad {
+  position: relative;
+  width: 30%;
+}
+
+.inputSearch {
+  padding: 9px;
+  text-align: start;
+  border-radius: 5px;
+  width: 90%;
+  border: 2px inset;
+  appearance: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #7F7F7F;
+  appearance: none;
+  overflow: auto;
+}
+
+.contenedorLista {
+  position: absolute;
+  z-index: 1;
+  width: 90%;
+}
+
+.lista {
+  width: -webkit-fill-available;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  border: 0.5px solid  #7F7F7F ;
+}
+.lista::-webkit-scrollbar {
+  width: 6px; /* Ancho de la barra de desplazamiento */
+  background-color: transparent; /* Establece el fondo de la barra transparente */
+}
+
+.lista::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Establece el color de la barra transparente */
+  border: none; /* Elimina los bordes de la barra */
+}
+.lista option{
+  font-size: 14px;
+  padding: 10px;
+  color:  #7F7F7F;
+  border-bottom: 0.5px solid #F0572D;
+  margin: 10px;
+}
+
+
+
+.btnSearch {
+  background: rgba(240, 87, 45, 1);
+  height: -webkit-fill-available;
+  font-size: 1rem;
+  width: 3.5rem;
+  padding: 7px;
+  border-radius: 0 5px 5px 0;
+  right: 1px;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.btnSearch>i {
+  color: #FFFFFF;
+}
+
+.containerButtonSearch{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  flex-wrap: nowrap;
+ 
+}
+/*--------------------------Tablet----------------------*/
+@media (max-width:768px) {
+
+  .containerSelectForm {
+    width: 90%;
+  }
+
+.containerButtonSearch{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  flex-wrap: nowrap;
+ 
+}
+.contenedorInputCiudad {
+  width: 36%;
+}
+}
+
+.contenedorInputCorreo{
+  display: flex;
+  width: 50%;
+}
+
+.buttonVerTodosLosUsuarios{
+  background-color: #F0572D;
+  height: -webkit-fill-available;
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Roboto';
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  text-align: center;
+  width: 250px;
+  margin-left: 10px;
+}
+/*--------------------------mobile----------------------*/
+@media (max-width:600px) {
+
+  .containerSelectForm {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .containerSearch {
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px
+  }
+
+  .inputSearch {
+    width: 100%;
+  }
+
+  .btnSearch {
+    width: 3rem;
+  }
+
+  .contenedorInputCiudad {
+    width: 100%;
+  }
+
+  .contenedorDeCiudadesRecibidas {
+    width: 261px;
+  }
+  
+.containerButtonSearch{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  flex-wrap: wrap;
+}
+.buttonVerTodosLosUsuarios{
+  width: 100%;
+}
+.contenedorInputCorreo{
+width: 100%;
+margin-bottom: 10px;
+}
+
+.contenedorLista {
+  width: 100%;
+}
+}
+
+
+@media (max-width:320px) {
+  .contenedorDeCiudadesRecibidas {
+    width: 222px;
+  }
+  
+.containerButtonSearch{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  flex-wrap: wrap;
+}
+.buttonVerTodosLosUsuarios{
+  width: 100%;
+}
+.contenedorInputCorreo{
+width: 100%;
+margin-bottom: 10px;
+}
+}
+
+
+
+
+/*--------------------------Tablet----------------------*/
+@media (max-width:750px) {
+
+  .containerSelectForm {
+    width: 90%;
+  }
+
+    
+.containerButtonSearch{
+  width: 80%;
+ 
+}
+
+.containerButtonSearch{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95vw;
+  flex-wrap: wrap;
+}
+.buttonVerTodosLosUsuarios{
+  width: 100%;
+}
+.contenedorInputCorreo{
+width: 100%;
+margin-bottom: 10px;
+}
+}

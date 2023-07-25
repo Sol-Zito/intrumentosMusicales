@@ -1,0 +1,100 @@
+.contenedorPoliticas {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.itemPoliticas {
+    display: flex;
+    flex-direction: column;
+    width: 26%;
+}
+
+.itemPoliticas>h4 {
+    color: rgb(78 75 75);
+}
+
+.divider {
+    margin: 2px;
+    width: 100%;
+    align-self: center;
+    border-top: 1px solid #F0572D;
+}
+
+.contenedor {
+    width: 80%;
+    margin: auto;
+}
+
+.contenedor>h2 {
+    text-align: start;
+}
+
+.title {
+    margin: 20px;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.13px;
+    color: #383B58;
+}
+
+/*-----------------NOTEBOOK----------------------*/
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    .contenedorPoliticas{
+        width: auto;
+    }
+
+    .contenedorPoliticas {
+        justify-content: space-between;
+        align-content: space-around;
+    }
+
+    .itemPoliticas {
+        width: 45%;
+    }
+}
+
+/*-----------------TABLET----------------------*/
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+
+    .card {
+        text-align: center;
+        width: 90vw;
+    }
+
+    .contenedorPoliticas {
+        justify-content: space-between;
+        align-content: space-around;
+    }
+
+    .itemPoliticas {
+        width: 90%;
+        padding-left: 20px;
+    }
+}
+
+/*---------------MOBILE--------------------*/
+@media only screen and (min-width: 0px) and (max-width:600px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        height: 100%;
+        width: 300px;
+
+    }
+
+    .itemPoliticas {
+        width: 90%;
+        padding-left: 20px;
+    }
+}

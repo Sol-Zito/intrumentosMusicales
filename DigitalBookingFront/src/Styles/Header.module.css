@@ -1,0 +1,613 @@
+.header {
+  background-color: #FFFFFF;
+  padding: 10px 40px;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.cajaLogo {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  font-family: 'Roboto';
+  font-style: italic;
+  flex-wrap: wrap;
+
+}
+
+.logo {
+  margin: 3%;
+  width: 75%;
+}
+
+.cajaLogo a {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.button {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  border: 1px solid #F0572D;
+  padding: 10px 10px;
+  margin: 4px;
+  font-size: 1em;
+  font-family: 'Roboto';
+  color: #F0572D;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  text-align: center;
+
+}
+
+.button:hover {
+  background-color: #F0572D;
+  color: #FFFFFF;
+}
+
+.button:focus,
+.button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.btn_MenuResponsive {
+  display: none;
+}
+
+.dropDownMenu {
+  position: relative;
+  margin-top: -20px;
+}
+
+.dropDownMenu>a {
+  text-decoration: none;
+  text-align: center;
+
+}
+
+.dropDownMenu .menu {
+  display: none;
+  position: absolute;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  width: 100%;
+  padding-left: 30px;
+  max-height: 90vh;
+  overflow: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+
+ }
+
+ .menu::-webkit-scrollbar {
+  width: 6px; /* Ancho de la barra de desplazamiento */
+  background-color: transparent; /* Establece el fondo de la barra transparente */
+}
+
+.menu::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Establece el color de la barra transparente */
+  border: none; /* Elimina los bordes de la barra */
+}
+.dropDownMenu:hover .menu {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dropDownMenu .menu ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+
+}
+
+.dropDownMenu .menu li a {
+  color: rgba(84, 87, 118);
+  display: block;
+  text-decoration: none;
+  width: 190px;
+
+}
+
+.dropDownMenu .menu li {
+  border-bottom: solid 1px hsl(13, 83%, 68%);
+
+}
+
+.dropDownMenu .menu ul .btnLogout {
+  border-bottom: none;
+}
+
+.dropDownMenu .menu li a:hover {
+  background-color: #F0572D;
+  color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.dropDownMenu .menu li:hover {
+  background-color: #F0572D;
+  color: #FFFFFF;
+  border-radius: 5px;
+
+}
+
+
+.btnLogout {
+  text-align: center;
+}
+
+.dropDownMenu .menu .btnLogout:hover {
+  background: none;
+}
+
+/*---------------MOBILE--------------------*/
+@media only screen and (min-width: 0px) and (max-width:600px) {
+  .btn_MenuResponsive {
+    display: block;
+    visibility: visible;
+    position: absolute;
+    right: 0.1rem;
+    padding-right: 3%;
+    padding-top: 0.4rem;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    height: 53px;
+
+  }
+
+  .cajaButton {
+    display: none;
+  }
+
+  .cajaLogo p {
+    display: none;
+  }
+
+  .cajaLogo {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 3%;
+    padding-top: 0.3rem;
+    width: 100%;
+  }
+
+  .cajaLogo img {
+    border: 0;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .dataBtnMenuResponsive {
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 52px;
+    background-color: white;
+    width: 100%;
+    height: calc(100vh - 40px);
+    background: linear-gradient(to bottom,
+        #F0572D 0%,
+        #F0572D 170px,
+        #FFFFFF 170px,
+        #FFFFFF 100%);
+    align-items: flex-end;
+    overflow: scroll;
+  }
+
+  .linkPages {
+    width: 100%;
+    text-align: right;
+    padding: 3% 2% 0 0;
+  }
+
+  .line {
+    width: 95%;
+    height: 0;
+    border: 0.01rem solid rgba(84, 87, 118, 0.39);
+    margin: 0 2% 0 2%;
+    display: inline-block;
+  }
+
+  .dataMenu_Menu {
+    padding: 135px 3% 5% 0;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 700;
+  }
+
+  .dataMenu {
+    font-family: 'Roboto';
+    font-weight: 500;
+  }
+
+  .networkHeader {
+    width: 100%;
+    height: calc(100vh - 340px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 2%;
+    color: rgba(84, 87, 118, 0.39);
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+  }
+
+  .menu ul {
+    margin: 0px;
+    list-style: none;
+
+
+  }
+
+  .menu li a {
+    color: rgba(84, 87, 118);
+    display: block;
+    list-style: none;
+    text-align: right;
+
+  }
+
+  .menu li {
+    width: 100%;
+    border-bottom: 0.01rem solid rgba(84, 87, 118, 0.39);
+    text-decoration: none;
+    list-style: none;
+
+
+  }
+
+  .menu li:hover {
+    background-color: #F0572D;
+    color: #FFFFFF;
+
+  }
+
+  .menu li a:hover {
+    background-color: #F0572D;
+    color: #FFFFFF;
+
+  }
+
+
+
+}
+
+/*-----------------TABLET----------------------*/
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .btn_MenuResponsive {
+    display: block;
+    visibility: visible;
+    position: absolute;
+    right: 0.1rem;
+    padding-right: 3%;
+    padding-top: 0.4rem;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    height: 53px;
+  }
+
+  .cajaButton {
+    display: none;
+  }
+
+  .cajaLogo p {
+    display: none;
+  }
+
+  .cajaLogo {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 3%;
+    padding-top: 0.3rem;
+    width: 100%;
+  }
+
+  .cajaLogo img {
+    border: 0;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+  }
+
+  .dataBtnMenuResponsive {
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 52px;
+    background-color: white;
+    width: 100%;
+    height: calc(100vh - 30px);
+    background: linear-gradient(to bottom,
+        #F0572D 0%,
+        #F0572D 200px,
+        #FFFFFF 200px,
+        #FFFFFF 100%);
+    align-items: flex-end;
+    overflow: scroll;
+  }
+
+  .linkPages {
+    width: 100%;
+    text-align: right;
+    padding: 3% 2% 0 0;
+  }
+
+  .line {
+    width: 95%;
+    height: 0;
+    border: 0.01rem solid rgba(84, 87, 118, 0.39);
+    margin: 0 1% 0 1%;
+    display: inline-block;
+  }
+
+  .dataMenu_Menu {
+    padding: 160px 3% 5% 0;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 1.4rem;
+
+  }
+
+  .dataMenu {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1.4rem;
+ 
+    
+  }
+
+  .networkHeader {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-bottom: 20px;
+    right: 2%;
+    color: rgba(84, 87, 118, 0.39);
+    font-weight: 600;
+    font-size: 1.4rem;
+  }
+
+
+  .menu {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+  }
+
+  .menu ul {
+    margin: 0px;
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .menu li p {
+    color: rgba(84, 87, 118);
+    display: block;
+    list-style: none;
+    text-align: right;
+    margin: 0px;
+    padding: 10px;
+
+  }
+
+  .menu li {
+    width: 100%;
+    border-bottom: 0.01rem solid rgba(84, 87, 118, 0.39);
+    text-decoration: none;
+    list-style: none;
+    margin: 0px;
+    padding: 10px;
+
+  }
+
+  .menu li:hover {
+    background-color: #F0572D;
+    color: #FFFFFF;
+
+  }
+
+  .menu li p:hover {
+    background-color: #F0572D;
+    color: #FFFFFF;
+
+  }
+
+
+
+
+
+
+}
+
+/*-----------------NOTEBOOK----------------------*/
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  .btn_MenuResponsive {
+    display: block;
+    visibility: visible;
+    position: absolute;
+    right: 0.1rem;
+    padding-right: 3%;
+    padding-top: 0.4rem;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    height: 53px;
+  }
+
+  .cajaButton {
+    display: none;
+  }
+
+  .cajaLogo p {
+    display: none;
+  }
+
+  .cajaLogo {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 3%;
+    padding-top: 0.3rem;
+    width: 100%;
+  }
+
+  .cajaLogo img {
+    border: 0;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+  }
+
+  .dataBtnMenuResponsive {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    padding-right: 5px;
+    top: 52px;
+    background-color: white;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: linear-gradient(to bottom,
+        #F0572D 0%,
+        #F0572D 200px,
+        #FFFFFF 200px,
+        #FFFFFF 100%);
+    align-items: flex-end;
+    overflow: scroll;
+  }
+
+  .linkPages {
+    width: 100%;
+    text-align: right;
+    padding: 3% 2% 0 0;
+  }
+
+  .line {
+    width: 95%;
+    height: 0;
+    border: 0.01rem solid rgba(84, 87, 118, 0.39);
+    margin: 0 2% 0 2%;
+    display: inline-block;
+  }
+
+  .dataMenu_Menu {
+    padding: 160px 3% 5% 0;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+
+  .dataMenu {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+  .networkHeader {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 15px;
+    right: 2%;
+    color: rgba(84, 87, 118, 0.39);
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .menu {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+  }
+
+  .menu ul {
+    margin: 0px;
+    list-style: none;
+
+
+  }
+
+  .menu li p {
+    color: rgba(84, 87, 118);
+    display: block;
+    list-style: none;
+    text-align: right;
+
+  }
+
+  .menu li {
+    width: 100%;
+    border-bottom: 0.01rem solid rgba(84, 87, 118, 0.39);
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .menu li:hover {
+    background-color: #F0572D;
+    color: #FFFFFF;
+
+  }
+
+  .menu li p:hover {
+    background-color: #F0572D;
+    color: #FFFFFF;
+
+  }
+
+
+
+}

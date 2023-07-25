@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.containerLogin {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+    font-family: 'Roboto';
+    width: auto;
+    height: calc(100vh - 160px);
+}
+
+.containerConfirmLoginForBooking {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.containerBorderLogin {
+    background-color: rgba(255, 255, 255, 0.404);
+    width: 30%;
+    padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+    border: 1px solid #F0572D;
+    border-radius: 2rem;
+}
+
+.textLogin {
+    color: #F0572D;
+    display: flex;
+    justify-content: center;
+    padding: 4% 3% 1% 3%;
+    margin: 0px;
+}
+
+.formLogin {
+    display: flex;
+    justify-content: center;
+    padding: 3% 3% 1% 3%;
+}
+
+.containerFormLogin {
+    width: 35%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.inputLogin {
+    text-align: left;
+    height: 3rem;
+    border-color: rgba(0, 0, 0, 0.15);
+    border-radius: 5%;
+    box-shadow: 0rem 0.0625rem 0.3125rem rgba(0, 0, 0, 0.15);
+    border-radius: 0.3125rem;
+    font-size: 1.2rem;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.labelLogin {
+    max-width: 100%;
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.containerInputLogin {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+}
+
+.containerBtnLogin {
+    display: flex;
+    justify-content: center;
+    padding: 7% 0 3% 0;
+}
+
+.btnLogin {
+    text-align: center;
+    width: 30%;
+    background-color: #F0572D;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    ;
+    padding: 10px 0px;
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+.verifyRegister {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.textRegister {
+    color: #4F80F7;
+}
+
+.containerLogin i {
+    position: absolute;
+    left: 10px;
+    cursor: pointer;
+    top: 2.6rem;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.icon_eye {
+    position: absolute;
+    left: 90% !important;
+}
+
+.messageErrorLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    align-items: center;
+    background-color: white;
+    width: 25%;
+    height: auto;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 40%;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 0.88rem;
+}
+
+.btnAlertLogin{
+    background-color:#FFFFFF;
+    border-radius: 0.5rem;
+    border: 0.15rem solid #F0572D;
+    justify-content: center;
+    padding: 5px 2px;
+    margin: 4px 2px;
+    font-size: 1rem;
+    font-family: 'Roboto';
+    color:#F0572D;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    width: 10%;
+    font-weight: 700;
+}
+
+/*-----------------MOBILE------------------*/
+@media only screen and (min-width: 0px) and (max-width:600px) {
+    .containerLogin {
+        height: calc(100vh - 140px);
+        justify-content: center;
+    }
+
+    .containerBorderLogin {
+        width: 70%;
+    }
+
+    .containerFormLogin {
+        width: 85%;
+    }
+
+    .inputLogin {
+        font-size: 1rem;
+        height: 2rem;
+    }
+
+    .labelLogin {
+        max-width: 100%;
+        width: 100%;
+        font-size: 1.1rem;
+        text-align: left;
+    }
+
+    .containerLogin i {
+        position: absolute;
+        left: 10px;
+        cursor: pointer;
+        top: 2rem;
+        font-size: 1.2rem;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    .icon_eye {
+        position: absolute;
+        left: 85% !important;
+    }
+
+    .textLogin {
+        font-size: 1.5rem;
+        padding-bottom: 50px;
+    }
+
+    .textRegister {
+        font-size: 0.8rem;
+    }
+
+    .verifyRegister {
+        font-size: 0.8rem;
+    }
+
+    .messageErrorLogin {
+        width: 60%;
+    }
+}
+
+/*-----------------TABLET----------------------*/
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    .containerLogin {
+        height: calc(100vh - 140px);
+        justify-content: center;
+    }
+
+    .containerBorderLogin {
+        width: 70%;
+    }
+
+    .containerFormLogin {
+        width: 60%;
+    }
+
+    .inputLogin {
+        font-size: 1.5rem;
+        height: 2.5rem;
+        padding-left: 3rem;
+    }
+
+    .labelLogin {
+        max-width: 100%;
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .containerLogin i {
+        position: absolute;
+        left: 15px;
+        cursor: pointer;
+        top: 2.5rem;
+        font-size: 1.5rem;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    .icon_eye {
+        position: absolute;
+        left: 85% !important;
+    }
+
+    .textRegister {
+        font-size: 1.2rem;
+    }
+
+    .verifyRegister {
+        font-size: 1.2rem;
+    }
+
+    .messageErrorLogin {
+        width: 40%;
+        top: 43%;
+    }
+}
+
+/*-----------------NOTEBOOK----------------------*/
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    .containerLogin {
+        height: calc(100vh - 140px);
+        justify-content: center;
+    }
+
+    .containerBorderLogin {
+        width: 70%;
+    }
+
+    .containerFormLogin {
+        width: 60%;
+    }
+
+    .inputLogin {
+        font-size: 2rem;
+        height: 3rem;
+        padding-left: 2.5rem;
+    }
+
+    .labelLogin {
+        max-width: 100%;
+        width: 100%;
+        font-size: rem;
+        text-align: left;
+    }
+
+    .containerLogin i {
+        position: absolute;
+        left: 10px;
+        cursor: pointer;
+        top: 2.2rem;
+        font-size: 1.5rem;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    .icon_eye {
+        position: absolute;
+        left: 90% !important;
+    }
+
+    .textLogin {
+        font-size: 1.5rem;
+        padding-bottom: 30px;
+    }
+
+    .textRegister {
+        font-size: 1.5rem;
+    }
+
+    .verifyRegister {
+        font-size: 1.5rem;
+    }
+}

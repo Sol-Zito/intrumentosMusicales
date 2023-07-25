@@ -1,0 +1,316 @@
+/*-------------------------DESKTOP-----------------------*/
+
+.showPasswordContainer {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%);
+}
+
+.containerRegister {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+    font-family: 'Roboto';
+}
+
+.textCrearCta {
+    color: #F0572D;
+    display: flex;
+    justify-content: center;
+    padding: 3% 3% 0% 3%;
+    margin: 0px;
+}
+
+.formRegister {
+    display: flex;
+    justify-content: center;
+    padding: 3% 3% 1% 3%;
+}
+
+.containerFormRegister {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+   
+}
+
+.containerNameUser {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+}
+
+.inputRegister {
+    text-align: left;
+    height: 2rem;
+    border-color: rgba(0, 0, 0, 0.15);
+    border-radius: 5%;
+    box-shadow: 0rem 0.0625rem 0.3125rem rgba(0, 0, 0, 0.15);
+    border-radius: 0.3125rem;
+    font-size: 1rem;
+    padding: 1px;
+    width: 100%;
+  
+}
+
+
+.input_user {
+    text-align: left;
+    height: 2rem;
+    border-color: rgba(0, 0, 0, 0.15);
+    border-radius: 5%;
+    box-shadow: 0rem 0.0625rem 0.3125rem rgba(0, 0, 0, 0.15);
+    border-radius: 0.3125rem;
+    font-size: 1rem;    
+ 
+    padding: 1px;
+}
+
+.labelRegister {
+    max-width: 100%;
+    width: 100%;
+    font-size: 1rem;
+    text-align: left;
+    margin-right: 20px;
+}
+
+
+
+.containerInputRegister {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: column;
+    position: relative;
+}
+
+.containerBtnRegister {
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+.btnRegister {
+    text-align: center;
+    width: 30%;
+    background-color: #F0572D;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 10px 0px;
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+.verifyLogin {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.textLogin {
+    color: #4F80F7;
+}
+
+.messageAlertConfirmRegister {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    background-color: white;
+    width: 30%;
+    height: auto;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 35%;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 0.88rem;
+}
+
+.messageTitleTextValidateRegister {
+    color: rgba(240, 87, 45, 1);
+    font-weight: 700;
+}
+
+.textConfirmEmail{
+    display: flex;
+    justify-content: space-around;
+}
+
+.resendEmail{
+    color: #4F80F7;
+}
+
+.btnAlertRegister{
+    background-color:#FFFFFF;
+    border-radius: 0.5rem;
+    border: 0.15rem solid #F0572D;
+    padding: 5px 2px;
+    margin: 4px 2px;
+    font-size: 1rem;
+    font-family: 'Roboto';
+    color:#F0572D;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    text-align: center;
+    width: 10%;
+    font-weight: 700;
+}
+
+.messageAlertErrorRegister{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+    align-items: center;
+    background-color: white;
+    width: 30%;
+    height: auto;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 50%;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 0.88rem;
+}
+
+@media only screen and (min-width: 0px) and (max-width:600px) {
+    .containerRegister {
+        width: auto;
+        height: calc(100vh - 138px);
+        justify-content: center;
+    }
+
+    .containerNameUser {
+        flex-direction: column;
+
+    }
+
+    .containerFormRegister {
+        width: 100%;
+    }
+
+    .inputRegister {
+        font-size: 1rem;
+        height: 2rem;
+    }
+
+    .labelRegister {
+        max-width: 100%;
+        width: 100%;
+        text-align: left;
+    }
+
+    .textCrearCta {
+        font-size: 1.5rem;
+    }
+
+    .messageAlertConfirmRegister {
+        width: 65%;
+        top: 25%;
+    }
+
+    .messageAlertErrorRegister{
+        width: 65%;
+        top: 40%;
+    }
+
+    .btnAlertRegister{
+        width: 20%;
+        font-weight: 700;
+    }
+
+}
+
+/*-----------------TABLET----------------------*/
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    .containerRegister {
+        width: auto;
+        height: calc(100vh - 160px);
+        justify-content: center;
+    }
+
+    .containerNameUser {
+        flex-direction: column;
+    }
+
+    .containerFormRegister {
+        width: 85%;
+    }
+
+   
+
+    .labelRegister {
+        max-width: 100%;
+        width: 100%;
+         text-align: left;
+    }
+
+
+    .textCrearCta {
+        font-size: 2rem;
+    }
+
+    .btnRegister {
+        width: 40%;
+        font-size: 1.4rem;
+    }
+
+    .verifyLogin {
+        font-size: 1.3rem;
+    }
+
+    .textLogin {
+        font-size: 1.3rem;
+    }
+}
+
+/*-----------------NOTEBOOK----------------------*/
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    .containerRegister {
+        width: auto;
+        height: 100vh;
+        justify-content: center;
+    }
+
+    .containerFormRegister {
+        width: 85%;
+    }
+
+
+
+    .labelRegister {
+        max-width: 100%;
+        width: 100%;
+        text-align: left;
+    }
+
+
+
+    .textCrearCta {
+        font-size: 2.5rem;
+        padding: 0;
+        
+    }
+
+    .btnRegister {
+        width: 30%;
+        font-size: 1.2rem;
+    }
+
+    .verifyLogin {
+        font-size: 1.2rem;
+    }
+
+    .textLogin {
+        font-size: 1.2rem;
+    }
+}
